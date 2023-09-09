@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web to Lead</title>
-    <script src="webtolead.js"></script>
+    <script src="script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
-    <link rel="stylesheet" href="webtolead.css"/>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <h1 style="color:red">Create Lead</h1>
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onsubmit="beforesubmit(event)">
-    <input type=hidden name='captcha_settings' value='{"keyname":"myfirstlwcminiprjctwebtolead","fallback":"true","orgId":"00D5g000005IqkD","ts":""}'>
+        <input type=hidden name='captcha_settings' value='{"keyname":"webtolead","fallback":"true","orgId":"00DIw0000008kpY","ts":""}'>
 
-        <input type=hidden name="oid" value="00D5g000005IqkD">
-        <!--<input type=hidden name="retURL" value="https://iamsirisha.github.io/myfirstlwcminiprjct/thanks.html">-->
+        <input type=hidden name="oid" value="00DIw0000008kpY">
+        <input type=hidden name="retURL" value="https://yogesh9100.github.io/lwc-mini-project-web-to-lead1/thanks.html">
         <input type="hidden" name="Lead_Date__c" class="outputdate">
         
         <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text"  required="true"/><br>
@@ -29,7 +29,8 @@
 
         <input type="submit" name="submit" class="submit">
         
-<div class="g-recaptcha" data-callback="captchasuccess" data-sitekey="6LdgaQkoAAAAAIjz7L_Q4VA37BnNtir_qGofQ5Ib"></div><br>
+        <div class="g-recaptcha" data-sitekey="6Lf4uQ8oAAAAAECitZA4NaeF2sPQtvIodAdt_o_d"></div><br>
+
         
         </form>
 </body>
